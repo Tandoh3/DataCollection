@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+body {
+  margin: 0;
+  font-family: "Montserrat";
+  background: #EEEEEE;
+  font-size: 18px;
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
+.container h1 {
+  margin: 1em 0;
+}
+.container p {
+  line-height: 1.7rem;
+}
+.container .left {
+  background: linear-gradient(160deg, #601df7 0%, #8800ff 100%);
+  padding: 1em;
+}
+.container .left p, .container .left h1 {
+  color: white;
+}
+.container .right p {
+  margin: 2em 0 1em;
+}
+.container input, .container button {
+  width: calc(100% - 3em);
+  padding: 0.5em;
+  font-size: 0.97rem;
+  outline: none;
+  margin: 1em;
+}
+.container button {
+  width: calc(100% - 2em);
+  margin: 0;
+  background: #8800ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-family: "Montserrat";
+}
+
+/* Portrait and Landscape */
+@media only screen and (min-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+  button {
+    width: 60% !important;
+  }
+  input {
+    width: calc(60% - 1em) !important;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  p {
+    line-height: 1.7em !important;
+  }
+  .inner {
+    display: grid;
+    grid-template-columns: 55% auto;
+  }
+  .inner .left {
+    text-align: left;
+    padding: 0 2em;
+    height: 100vh;
+    display: grid;
+  }
+  .inner .left .content {
+    padding: 0 3em;
+  }
+  .inner .left h1 {
+    margin: 0;
+    font-size: 2.4em;
+  }
+  .inner .left h1 span {
+    display: block;
+  }
+  .right {
+    text-align: right;
+    align-self: center;
+    padding: 0 2em 1.5em;
+    justify-self: center;
+  }
+  .right input {
+    width: calc(100% - 1em) !important;
+    margin: 1em 0;
+  }
+  .right button {
+    width: 100% !important;
+  }
+  .right p {
+    text-align: center;
+  }
+  .proto-container {
+    -webkit-clip-path: inset(0 45% 0 0);
+            clip-path: inset(0 45% 0 0);
+    position: absolute;
+    top: 20%;
+    height: 70%;
+    z-index: 0;
+    width: 100%;
+    pointer-events: none;
+  }
+  .proto-container .proto {
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    width: 19%;
+    height: 80%;
+    float: left;
+    margin-left: 1em;
+    transform: translateX(10%);
+  }
+}
+@media only screen and (min-width: 1024px) and (min-width: 1800px) {
+  body {
+    font-size: 22px;
+  }
+  .content {
+    padding: 0 6em !important;
+  }
+  .right {
+    padding: 0 !important;
+  }
+}/*# sourceMappingURL=main.css.map */
